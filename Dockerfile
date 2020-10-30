@@ -1,11 +1,11 @@
 # Specify base image 
-FROM node:alpine
+FROM node:10.23.0-alpine
 
 # Install dependencies
 WORKDIR /usr/app
 
 COPY ./ ./
-Run npm install -g 
+RUN npm install  
 
 
 # Default command
